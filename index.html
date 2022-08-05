@@ -10,24 +10,40 @@
     <title>Meteo</title>
 </head>
 <body>
-<div class="main text-center">
-    <div class="header">
-        <h1>Weather Program</h1>
-        <h3 class="city">Your current city is ...</h3>
-        <p>Welcome to your new guide in weather status</p>
-    </div>
+<div class="container px-4 py-0">
+    <h1>Weather Program</h1>
+        <div class="row py-3 px-1">
+            <h2>Select coordinates of city</h2>
+            <div class="col-md-3">
+                <div class="form-floating">
+                    <input type="number" step="0.001" class="form-control" id="latitude" name="Latitude" value="50.4422">
+                    <label for="latitude">Latitude</label>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="form-floating">
+                    <input type="number" step="0.001" class="form-control" id="longitude" name="Longitude" value="30.5367">
+                    <label for="longitude">Longitude</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <button type="button" class="btn btn-success col-md-4" style="height: 100%" onclick="runQ(document.getElementById('latitude').value, document.getElementById('longitude').value)">Run</button>
+            </div>
+            <p>Welcome to your new guide in weather status</p>
+        </div>
 </div>
 <div class="wrapper">
-    <div class="py-5">
+    <div class="py-1">
         <div class="container">
             <div class="row hidden-md-up">
                 <div class="col-md-4">
                     <div class="card text-center">
                         <div class="card-block">
                             <p class="w-img0"></p>
-                            <h4 class="card-title0">Monday</h4>
-                            <h5 class="card-subtitle0 text-muted">weather status</h5>
-                            <h6 class="card-text0 p-y-1">Some quick example text to build on the card title .</h6>
+                            <h4 class="card-title0">-</h4>
+                            <h5 class="card-subtitle0">Weather Status</h5>
+                            <h6 class="card-text0 p-y-1">-/-</h6>
                         </div>
                     </div>
                 </div>
@@ -35,9 +51,9 @@
                     <div class="card text-center">
                         <div class="card-block">
                             <p class="w-img1"></p>
-                            <h4 class="card-title1">Tuesday</h4>
-                            <h5 class="card-subtitle1 text-muted">weather status</h5>
-                            <h6 class="card-text1 p-y-1">Some quick example text to build on the card title .</h6>
+                            <h4 class="card-title1">-</h4>
+                            <h5 class="card-subtitle1">Weather Status</h5>
+                            <h6 class="card-text1 p-y-1">-/-</h6>
                         </div>
                     </div>
                 </div>
@@ -45,9 +61,9 @@
                     <div class="card text-center">
                         <div class="card-block">
                             <p class="w-img2"></p>
-                            <h4 class="card-title2">Wednesday</h4>
-                            <h5 class="card-subtitle2 text-muted">weather status</h5>
-                            <h6 class="card-text2 p-y-1">Some quick example text to build on the card title .</h6>
+                            <h4 class="card-title2">-</h4>
+                            <h5 class="card-subtitle2">Weather Status</h5>
+                            <h6 class="card-text2 p-y-1">-/-</h6>
                         </div>
                     </div>
                 </div>
@@ -57,9 +73,9 @@
                     <div class="card text-center">
                         <div class="card-block">
                             <p class="w-img3"></p>
-                            <h4 class="card-title3">Thursday</h4>
-                            <h5 class="card-subtitle3 text-muted">weather status</h5>
-                            <h6 class="card-text3 p-y-1">Some quick example text to build on the card title .</h6>
+                            <h4 class="card-title3">-</h4>
+                            <h5 class="card-subtitle3">Weather Status</h5>
+                            <h6 class="card-text3 p-y-1">-/-</h6>
                         </div>
                     </div>
                 </div>
@@ -67,9 +83,9 @@
                     <div class="card text-center">
                         <div class="card-block">
                             <p class="w-img4"></p>
-                            <h4 class="card-title4">Friday</h4>
-                            <h5 class="card-subtitle4 text-muted">weather status</h5>
-                            <h6 class="card-text4 p-y-1">Some quick example text to build on the card title .</h6>
+                            <h4 class="card-title4">-</h4>
+                            <h5 class="card-subtitle4">Weather Status</h5>
+                            <h6 class="card-text4 p-y-1">-/-</h6>
                         </div>
                     </div>
                 </div>
@@ -77,9 +93,9 @@
                     <div class="card text-center">
                         <div class="card-block">
                             <p class="w-img5"></p>
-                            <h4 class="card-title5">Saturday</h4>
-                            <h5 class="card-subtitle5 text-muted">weather status</h5>
-                            <h6 class="card-text5 p-y-1">Some quick example text to build on the card title .</h6>
+                            <h4 class="card-title5">-</h4>
+                            <h5 class="card-subtitle5">Weather Status</h5>
+                            <h6 class="card-text5 p-y-1">-/-</h6>
                         </div>
                     </div>
                 </div>
@@ -89,9 +105,9 @@
                     <div class="card text-center">
                         <div class="card-block">
                             <p class="w-img6"></p>
-                            <h4 class="card-title6">Sunday</h4>
-                            <h5 class="card-subtitle6 text-muted">weather status</h5>
-                            <h6 class="card-text6 p-y-1">Some quick example text to build on the card title .</h6>
+                            <h4 class="card-title6">-</h4>
+                            <h5 class="card-subtitle6">Weather Status</h5>
+                            <h6 class="card-text6 p-y-1">-/-</h6>
                         </div>
                     </div>
                 </div>
