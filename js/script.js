@@ -176,3 +176,10 @@ function runQ(a, b) {
 
     });
 }
+$("#select_city").change(function(e){
+    let selected = $(this).find(':selected');
+    $('#latitude').val(selected.data('latitude'));
+    $('#longitude').val(selected.data('longitude'));
+    console.log( $('#longitude').val(selected.data('longitude')))
+});
+
